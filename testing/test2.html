@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #121212;
+  color: white;
+}
+
+/* Shared styles for all sections */
+.sidebar, .main {
+  height: 100vh;
+  overflow: hidden; /* hide scrollbars by default */
+}
+
+.sidebar:hover, .main:hover {
+  overflow-y: auto; /* scroll only when hovered */
+}
+
+/* Scrollbar styling (optional, modern look) */
+.sidebar::-webkit-scrollbar,
+.main::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar::-webkit-scrollbar-thumb,
+.main::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+
+/* Layout proportions */
+.left {
+  width: 20%;
+  background-color: #181818;
+}
+
+.main {
+  flex: 1;
+  background-color: #202020;
+}
+
+.right {
+  width: 25%;
+  background-color: #181818;
+}
+
+/* Padding for inner content */
+.content {
+  padding: 20px;
+}
+
+.content h1{
+    margin-bottom: 2000px;
+}
+
+.content h2{
+    margin-bottom: 200;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar left">
+            <div class="content">
+            <h2>Left Sidebar</h2>
+            <p>Lots of items here...</p>
+            <!-- Add more items -->
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="content">
+            <h1>Main Section</h1>
+            <p>Scrollable content when hovered...</p>
+            <!-- Add more -->
+            </div>
+        </div>
+
+        <div class="sidebar right">
+            <div class="content">
+            <h2>Right Sidebar</h2>
+            <p>Artist info, etc.</p>
+            <!-- Add more -->
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

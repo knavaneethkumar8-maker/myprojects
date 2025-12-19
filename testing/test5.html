@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.tweet-box {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 12px;
+  background: #181818;
+}
+
+.tweet-box textarea {
+  width: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow: hidden; /* hide scrollbar */
+  min-height: 40px;
+  max-height: 300px; /* optional limit */
+}
+
+.wrap-input {
+  width: 100%;
+  max-width: 600px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+
+
+    </style>
+
+    <script>
+const textarea = document.querySelector('.tweet-box textarea');
+
+textarea.addEventListener('input', () => {
+  textarea.style.height = 'auto';          // reset height
+  textarea.style.height = textarea.scrollHeight + 'px'; // grow to fit content
+});
+
+
+    </script>
+</head>
+<body>
+<div class="tweet-box">
+  <textarea placeholder="What's happening?"></textarea>
+</div>
+
+<input type="text" class="wrap-input" placeholder="Type something...">
+
+   
+
+    
+</body>
+</html>

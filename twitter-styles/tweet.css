@@ -1,0 +1,521 @@
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    padding-bottom: 10000px;
+}
+
+.tweet{
+    min-height: 300px;
+    width: 100%;
+
+    display: flex;
+    flex-shrink: 0px;
+
+    padding-top: 10px;
+
+    border-bottom: 1px solid rgb(232, 232, 232);
+
+    cursor: pointer;
+
+
+}
+
+.tweet:hover{
+    background-color: rgb(250, 250, 250);
+}
+
+
+
+.tweet-profile{
+    width: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-left: 12px;
+    padding-right: 8px;
+    padding-top: 2px;
+
+}
+
+.tweet-section{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-right: 20px;
+
+
+}
+
+
+.tweet-profile-pic{
+    width: 45px;
+    aspect-ratio: 1/1;
+    border-radius: 40px;
+
+}
+
+.tweet-profile-pic img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 40px;
+    
+}
+
+.page-details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+
+
+    flex-shrink: 0;
+}
+
+.page-name{
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.page-name:hover{
+    text-decoration: underline;
+    .profile-card{
+        opacity: 1;
+    }
+
+}
+
+.verified-logo img{
+    height: 20px;
+    padding-top: 4px;
+    margin-right: 3px;
+
+}
+
+.id-time,
+.time{
+    color: rgb(112, 112, 112);
+    font-weight: 400;
+    cursor: pointer;
+    display: block;
+}
+
+.time-container{
+    display: flex;
+    align-items: center;
+
+    margin-left: 3px;
+    position: relative;
+}
+
+.time-container .tool-tip{
+    visibility: hidden;
+}
+
+.time-container .tool-tip p{
+    text-wrap: nowrap;
+}
+
+.time-container:hover{
+    .tool-tip{
+        visibility: visible;
+        opacity: 1;
+        transition-delay: 0.5s;
+        top: 20px;
+        left: -30px;
+    }
+}
+
+
+
+.text{
+    margin-bottom: 10px;
+}
+
+.text p{
+    line-height: 22px;
+}
+
+.media{
+    flex: 1;
+    background-color: aliceblue;
+
+    border-radius: 14px;
+    border: 1px solid rgb(232, 232, 232);
+
+    margin-bottom: 8px;
+
+    min-height: 100px;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.media img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.action-buttons{
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+
+}
+
+.interactions{
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.interactions p{
+    font-size: 14px;
+    color:  rgb(111, 111, 111);
+
+    position: relative;
+    z-index: 10;
+}
+
+.comment,
+.retweet,
+.like,
+.views{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 7px 7px;
+    border-radius: 30px;
+
+    margin-right: -4px;
+
+    position: relative;
+    z-index: 0;
+}
+
+.comment svg,
+.like svg,
+.views svg,
+.retweet svg{
+    width: 18px;
+}
+
+
+.share-save{
+    display: flex;
+    gap: 4px;
+}
+
+.save,
+.share{
+    cursor: pointer;
+
+}
+
+.save svg,
+.share svg{
+    width: 18px;
+}
+
+.circle .tool-tip{
+    top: 34px;
+}
+
+.save:hover,
+.share:hover,
+.comment:hover,
+.views:hover{
+    .circle{
+        background-color: rgb(221, 238, 254);
+    }
+
+    svg{
+        fill: rgb(41, 138, 241);
+    }
+
+    p{
+        color: rgb(41, 138, 241);
+    }
+
+    .circle .tool-tip{
+        opacity: 1;
+        transition-delay: 0.5s;
+    }
+}
+
+svg{
+    fill: rgb(111, 111, 111);
+}
+
+.retweet:hover{
+    .circle{
+        background-color: rgb(225, 254, 237);
+    }
+
+    svg{
+        fill: rgb(27, 172, 85);
+    }
+
+    p{
+        color: rgb(27, 172, 85);
+    }
+
+    .circle .tool-tip{
+        opacity: 1;
+        transition-delay: 0.5s;
+    }
+
+}
+
+.like:hover{
+    .circle{
+        background-color: rgb(254, 225, 235);
+    }
+
+    svg{
+        fill: rgb(199, 36, 85);
+    }
+
+    p{
+        color: rgb(199, 36, 85);
+    }
+
+    .circle .tool-tip{
+        opacity: 1;
+        transition-delay: 0.5s;
+    }
+
+}
+
+.page-details-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-shrink: 0;
+}
+
+
+.more-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+.more-container:hover{
+    .tool-tip{
+        opacity: 1;
+        top: 40px;
+        transition-delay: 0.5s;
+    }
+}
+
+
+
+
+
+.profile-card{
+    position: absolute;
+    top: 50px;
+    left: -10px;
+
+    background-color: rgb(255, 255, 255);
+    
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+
+    padding: 20px;
+    border-radius: 14px;
+
+    box-shadow: 0px 2px 10px rgba(136, 136, 136, 0.557);
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.15s;
+
+    z-index: 100000;
+
+}
+
+.pic-follow{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+
+    margin-bottom: 4px;
+}
+
+.pic-follow .tweet-profile-pic{
+    width: 60px;
+}
+
+.pic-follow .follow-button{
+    height: 38px;
+}
+
+.profile-card-name{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+
+    margin-bottom: -4px;
+}
+
+.profile-card-id{
+    font-size: 14px;
+    color: rgb(89, 89, 89);
+
+    margin-bottom: 14px;
+}
+
+.profile-bio{
+    margin-bottom: 14px;
+    font-size: 15px;
+    line-height: 22px;
+
+    width: 240px;
+}
+
+.profile-tag{
+    color: rgb(41, 138, 241);
+    cursor: pointer;
+}
+
+.profile-tag:hover{
+    text-decoration: underline;
+}
+
+.following-details{
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    color: rgb(68, 68, 68);
+
+    margin-bottom: 10px;
+}
+
+.following-details span{
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 3px;
+    color: black;
+}
+
+.following-details p{
+    cursor: pointer;
+}
+
+.following-details p:hover{
+    text-decoration: underline;
+}
+
+.mutuals{
+    display: flex;
+    align-items: top;
+    font-size: 12px;
+    color: rgb(100, 99, 99);
+
+    margin-bottom: 14px;
+}
+
+.mutuals .tweet-profile-pic{
+    width: 24px;
+    margin-right: 10px;
+}
+
+.mutuals p{
+    margin-top: 2px;
+}
+
+
+.grok-summary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-weight: 600;
+
+    border: 1px solid rgb(184, 184, 184);
+    padding: 8px 0px;
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: background-color 0.15s;
+
+    position: relative;
+}
+
+.grok-summary:hover{
+    background-color: rgb(241, 241, 241);
+
+    .tool-tip{
+        opacity: 1;
+        top: 40px;
+        font-weight: 400;
+
+        transition-delay: 0.5s;
+    }
+}
+
+.grok-summary svg{
+    height: 20px;
+    fill: black;
+}
+
+.mutual-profile-name:hover{
+    text-decoration: underline;
+
+}
+
+.mutual-profile-name{
+    cursor: pointer;
+}
+
+.card-holder{
+    display: flex;
+    position: relative;
+}
+
+.page-details .card-holder .profile-card{
+    position: absolute;
+    left: -60px;
+    top: 30px;
+}
+
+.card-holder:hover{
+    .profile-card{
+        visibility:visible ;
+        opacity: 1;
+        transition-delay: 0.5s;
+    }
+}
+
+
+
+

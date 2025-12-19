@@ -1,0 +1,436 @@
+.right-section{
+    margin-top: 10px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-content{
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 1040px){
+    .right-section{
+        margin-right: 0px;
+    }
+
+    .middle-section{
+        margin-right: 0px;
+    }
+}
+
+@media (min-width:1090px){
+    .right-content{
+        width: 350px;
+    }
+}
+
+.search{
+    height: 20px;
+
+    border: 1px solid rgb(212, 212, 218);
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 12px 16px;
+}
+
+.search-icon-container{
+    width: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-right: 3px;
+}
+
+.search svg{
+    fill: rgb(101, 101, 101);
+}
+
+.search input{
+    flex: 1;
+    border: none;
+    font-size: 15px;
+    color: black;
+
+}
+
+.search input::placeholder{
+    color: rgb(101, 101, 101);
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.subscribe-container,
+.news,
+.trending,
+.follow-suggestions{
+    border: 1px solid rgb(232, 232, 232);
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+}
+
+.subscribe-container{
+    padding: 14px 16px;   
+}
+
+.news-preview,
+.top-event-now,
+.trending-hashtag,
+.show-more,
+.profile-suggestion{
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+.news-preview:hover,
+.news-preview-last:hover,
+.trending-hashtag:hover,
+.show-more:hover,
+.top-event-now:hover,
+.profile-suggestion:hover{
+    background-color: rgb(247, 247, 247);
+}
+
+.news-preview-last{
+    padding: 14px 16px;
+}
+
+.title{
+    font-size: 21px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.description{
+    font-size: 15px;
+    width: 90%;
+    line-height: 20px;
+    margin-bottom: 14px;
+    color: rgb(43, 43, 43);
+}
+
+.subscribe-button{
+    border: none;
+    background-color: rgb(9, 155, 246);
+
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+
+    padding: 10px;
+    width: 110px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.new-description{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+
+    margin-bottom: 8px;
+}
+
+.news .title,
+.trending .title,
+.follow-suggestions .title{
+    margin-bottom: 20px;
+    padding: 14px 0px 0px 16px;
+}
+
+.news-details{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.news-details p{
+    font-size: 13px;
+    color: rgb(91, 100, 116);
+    
+}
+
+.accounts{
+    display: flex;
+
+    position: relative;
+}
+
+.news-account,
+.news-account2,
+.news-account3{
+    width: 24px;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+.news-account img,
+.news-account2 img,
+.news-account3 img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.news-account,
+.news-account2{
+    margin-right: -12px;
+}
+
+.news-account{
+    z-index: 10;
+}
+.news-account2{
+    z-index: 9;
+}
+
+
+
+.top-event-now{
+    display: flex;
+    gap: 12px ;
+}
+
+.event-cover{
+    width: 70px;
+    aspect-ratio: 1/1;
+
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.event-cover img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.event-details{
+    flex: 1;
+    padding: 4px 0px;
+}
+
+.event-title{
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.event-time,
+.small-text{
+    font-size: 13px;
+    color: rgb(91, 100, 116);
+}
+
+
+.more-container{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+    padding: 8px;
+    border-radius: 20px;
+
+    cursor: pointer;
+
+}
+
+.more-container:hover{
+    background-color:  rgb(218, 240, 254);
+
+    .more-svg{
+        fill:  rgb(9, 155, 246);
+    }
+}
+
+
+.trending-hashtag{
+    display: flex;
+    flex-direction: column;
+}
+
+.hashtag-description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: -6px;
+
+}
+
+.hashtag-description svg{
+    width: 20px;
+}
+
+.hashtag{
+    font-size: 15px;
+    font-weight: 650;
+    margin-bottom: 3px;
+}
+
+.show-more{
+    font-size: 15px;
+    color:  rgb(9, 155, 246);
+}
+
+.profile-suggestion{
+    display: flex;
+    align-items: center;
+}
+
+.sugg-profile-pic{
+    width: 44px;
+    aspect-ratio: 1/1;
+    border-radius: 30px;
+    overflow: hidden;
+
+    margin-right: 8px;
+
+    flex-shrink: 0;
+
+}
+
+.sugg-profile-pic img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.suggested-profile-details{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 50%;
+}
+
+.name-type{
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    gap: 2px;
+
+
+    margin-right: 10px;
+
+    overflow: hidden;
+}
+
+.name-type img{
+    width: 18px;
+    padding-top: 4px;
+}
+
+.name-type p{
+    font-size: 15px;
+    font-weight: 650;
+
+    max-width: 85%;
+    
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.sugg-profile-id{
+    font-size: 15px;
+    color:  rgb(91, 100, 116);
+
+    max-width: 90%;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+.follow-button{
+    font-size: 14px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 8px 18px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+
+}
+
+.follow-button:hover{
+    opacity: 0.9;
+}
+
+.follow-suggestions .title{
+    margin-bottom: 8px;
+}
+
+.profile-suggestion{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.footer{
+    color: rgb(91, 100, 116);
+
+    margin-bottom: 100px;
+    font-size: 11px;
+
+    width: 90%;
+    align-items: baseline;
+}
+
+.footer p{
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 22px;
+
+    cursor: pointer;
+}
+
+.footer p:hover{
+    text-decoration: underline;
+}
+
+.dots{
+    display: inline-block;
+    font-size: 12px;
+    margin-left: -9px;
+}
+.dots:hover{
+    text-decoration: none;
+}
+
+.copyrights{
+    display: inline-block;
+
+}

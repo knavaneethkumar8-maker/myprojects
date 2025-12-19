@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* prevent the whole page from scrolling */
+}
+
+.container {
+  display: flex;
+  height: 100vh; /* full viewport height */
+}
+
+.left, .right {
+  flex: 1;
+  overflow-y: auto; /* both can scroll independently */
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+/* optional: style difference */
+.left { background: #f9f9f9; }
+.right { background: #e9e9e9; }
+
+h1{
+    padding-bottom: 2000px;
+}
+h2{
+    padding-bottom: 1000px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>title</h1>
+            <p>...a lot of content...</p>
+
+        </div>
+        <div class="right">
+            <h2>right</h2>
+            <p>...less content...</p>
+        </div>
+    </div>
+
+    
+</body>
+</html>
